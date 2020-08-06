@@ -11,7 +11,7 @@ pool: v-aprozo
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '6.12.0'
+    versionSpec: '6.10.0'
   displayName: 'Install Node.js'
 
 - script: |
@@ -25,3 +25,4 @@ steps:
     runOptions: 'inline'
     inline: 'ps aux'
     readyTimeout: '20000'
+
