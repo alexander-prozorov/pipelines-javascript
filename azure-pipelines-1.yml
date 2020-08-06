@@ -11,7 +11,7 @@ pool: v-aprozo
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '6.10.0'
+    versionSpec: '6.0.0'
   displayName: 'Install Node.js'
 
 - script: |
@@ -30,4 +30,5 @@ steps:
       echo i
       done
     readyTimeout: '20000'
+
 
