@@ -16,6 +16,6 @@ steps:
     sshEndpoint: 'vscale'
     runOptions: 'inline'
     inline: |
-      #!/bin/ksh
+      #!/bin/bash
       ps aux
     readyTimeout: '20000'
