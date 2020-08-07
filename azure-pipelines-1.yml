@@ -9,15 +9,7 @@ trigger:
 pool: v-aprozo
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.14.1'
-  displayName: 'Install Node.js'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
 
 - task: SSH@0
   inputs:
