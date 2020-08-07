@@ -23,12 +23,7 @@ steps:
   inputs:
     sshEndpoint: 'vscale'
     runOptions: 'inline'
-    inline: |
-      cd ../
-      for i in ls -1
-      do
-      echo i
-      done
+    inline: 'ps aux'
     readyTimeout: '20000'
 
 
