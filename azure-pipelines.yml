@@ -6,7 +6,8 @@
 trigger:
 - master
 
-pool: v-aprozo
+pool: 
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: NodeTool@0
