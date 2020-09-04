@@ -23,5 +23,3 @@ steps:
   inputs:
     script: |
       forever stopall
-      forever start server.js -d -v
-      forever list
