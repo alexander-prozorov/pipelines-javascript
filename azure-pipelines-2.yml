@@ -22,5 +22,6 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      pm2 start server.js
-      pm2 list
+      forever stopall
+      forever start server.js
+      forever list
