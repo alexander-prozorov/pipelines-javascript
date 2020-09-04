@@ -22,7 +22,5 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      npm i -g forever
-      forever stopall
-      forever start server.js
-      forever list
+      pm2 start server.js
+      pm2 list
