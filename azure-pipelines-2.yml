@@ -22,4 +22,9 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
+      forever start server.js
+
+- task: CmdLine@2
+  inputs:
+    script: |
       forever list
