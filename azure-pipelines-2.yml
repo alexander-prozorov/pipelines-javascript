@@ -10,29 +10,8 @@ pool: v-aprozo
 
 steps:
 
-- task: CmdLine@1
+- task: CmdLine@2
   inputs:
     script: |
       echo Write your commands here
-      
       echo Hello world
-
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
-
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
-
-- task: CmdLine@1
-  inputs:
-    script: |
-      forever start server.js
-
-- task: CmdLine@1
-  inputs:
-    script: |
-      forever list
