@@ -10,6 +10,10 @@ pool: v-aprozo
 
 steps:
 
+- task: NodeTool@0
+  inputs:
+    versionSpec: '6.x'
+
 - task: CmdLine@2
   inputs:
     script: |
