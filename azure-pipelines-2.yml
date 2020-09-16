@@ -10,20 +10,14 @@ pool: v-aprozo
 
 steps:
 
-- task: NodeTool@0
-  inputs:
-    versionSpec: '6.x'
-
 - task: CmdLine@2
   inputs:
     script: |
       echo Write your commands here
       echo Hello world
 
-- task: CmdLine@2
+- task: NodeJsExec@0
   inputs:
-    script: |
-      npm install
-      npm run build
-      node server.js
+    cwd: '$(System.DefaultWorkingDirectory)'
+    script: 'console.log(''Test message!'')'
 
