@@ -29,11 +29,10 @@ steps:
     cwd: '$(System.DefaultWorkingDirectory)'
     script: 'console.log(123)'
 
-
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'current'
-    artifactName: 'artefact'
-    itemPattern: '*.md'
+    artifactName: '**/server.js'
+    itemPattern: '**'
     targetPath: '$(Pipeline.Workspace)'
 
