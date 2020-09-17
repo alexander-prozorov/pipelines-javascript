@@ -23,5 +23,5 @@ steps:
 - task: NodeJsExec@0
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    script: 'npm install'
+    script: 'console.log(123)'
 
