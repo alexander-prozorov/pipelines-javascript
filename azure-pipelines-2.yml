@@ -29,10 +29,16 @@ steps:
     cwd: '$(System.DefaultWorkingDirectory)'
     script: 'console.log(123)'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'current'
-    artifactName: '**/server.js'
+    artifactName: 'drop'
     itemPattern: '**'
     targetPath: '$(Pipeline.Workspace)'
 
