@@ -29,7 +29,6 @@ steps:
   inputs:
     buildType: 'current'
     downloadType: 'single'
-    artifactName: 'server.js'
-    itemPattern: 'server.js'
+    artifactName: 'artifact'
     downloadPath: '$(System.ArtifactsDirectory)'
 
