@@ -25,6 +25,12 @@ steps:
     cwd: '$(System.DefaultWorkingDirectory)'
     script: 'console.log(123)'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
 - task: DownloadBuildArtifacts@0
   inputs:
     buildType: 'current'
