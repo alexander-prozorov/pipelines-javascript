@@ -35,10 +35,9 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: DownloadPipelineArtifact@2
+- task: DownloadBuildArtifacts@0
   inputs:
     buildType: 'current'
+    downloadType: 'single'
     artifactName: 'drop'
-    itemPattern: '**'
-    targetPath: '$(Pipeline.Workspace)'
-
+    downloadPath: '$(System.ArtifactsDirectory)'
