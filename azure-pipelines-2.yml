@@ -25,3 +25,11 @@ steps:
     cwd: '$(System.DefaultWorkingDirectory)'
     script: 'console.log(123)'
 
+- task: DownloadBuildArtifacts@0
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'server.js'
+    itemPattern: 'server.js'
+    downloadPath: '$(System.ArtifactsDirectory)'
+
