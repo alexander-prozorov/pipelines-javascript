@@ -14,10 +14,6 @@ steps:
   inputs:
     versionSpec: '6.x'
 
-- script: |
-    npm install
-    npm run build
-
 - task: CmdLine@2
   inputs:
     script: |
