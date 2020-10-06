@@ -17,3 +17,4 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Warning "Hello World"
+    showWarnings: true
