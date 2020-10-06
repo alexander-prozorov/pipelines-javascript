@@ -16,5 +16,5 @@ steps:
     script: |
       # Write your PowerShell commands here.
       
-      Write-Host "Hello World"
+      Write-Warning "Hello World"
     showWarnings: true
