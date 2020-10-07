@@ -18,3 +18,11 @@ steps:
       
       Write-Warning "Hello World"
     showWarnings: true
+
+- task: JenkinsQueueJob@2
+  inputs:
+    serverEndpoint: 'jenkins'
+    jobName: 'v-aprozo'
+    captureConsole: true
+    capturePipeline: true
+    isParameterizedJob: false
