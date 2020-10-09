@@ -21,7 +21,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '**/*.js'
+    PathtoPublish: './'
     ArtifactName: 'drop1'
     publishLocation: 'FilePath'
     TargetPath: 'C:/'
